@@ -1,0 +1,61 @@
+da:
+  shared:
+    admin:
+      image_picker:
+        image: billede
+  plugins:
+    campaigns:
+      title: Kampagner
+  admin:
+    refinery_settings:
+      form:
+        help:
+          mailchimp_api_key: "Skaf din API nøgle fra dit Mailchimp dashboard ved at vælge 'Account' og så 'API Keys & Info.'"
+          mailchimp_default_to_name: "default Til: navn som modtagerne vil se (ikke email addresse). Denne kan ændres for hver kampagne."
+          mailchimp_default_from_name: "default Fra: navn for din kampagne besked (ikke email addresse). Denne kan ændres for hver kampagne."
+          mailchimp_default_from_email: "default Fra: email addresse for din kampagne besked. Denne kan ændres for hver kampagne."
+          mailchimp_admin_base_url: basis URL for dit Mailchimp admin sted. Dette bruges ved generering af links til din kampagne for letheds skyld. Ændre den kun hvis du ved hvad du gør!
+    campaigns:
+      index:
+        create_new: Opret en ny Kampagne
+        reorder: Omorker Kampagner
+        reorder_done: Omrokering af Kampagner afsluttet
+        sorry_no_results: Inten søgeresultatet blev fundet.
+        no_items_yet: Der er endnu ingen Kampagner. Klik "Opret en ny Kampagne" for at tilføje dine første kampagne.
+        set_api_key: Du skal sætte en valid Mailchimp API nøgle.
+        set_api_link: Klik her for at opdatere din nøgle.
+      campaign:
+        view_live: Vis denne kampagne live <br/><em>(åbner i et nyt vindue)</em>
+        edit: Rediger denne kampagne
+        delete: Slet denne kampagne helt
+        delete_confirmation: "Er du sikker på du vil slette '%{subject}'?"
+        mailchimp_error: "Kunne ikke gemme til Mailchimp! Venligst sikre dig API nøglen er korrekt og at du bruger en valid 'Fra' email adresse."
+        send_dialog: "Send, skeduler, eller test din kampagne"
+        send_test_success: Test email sent til %{email} med success.
+        send_test_failure: Test email kunne ikke sendes til %{email}. Venligst tjek email adressen.
+        send_now_success: Kampagnen blev successfuldt sent afsted!
+        send_now_failure: Kampagnen kunne ikke sendes. Venligst tjek i Mailchimp for at sikre at alt er OK.
+        schedule_success: Kampagnen blev successfuldt skeduleret.
+        schedule_failure: Kampagnene kunne ikke skeduleres. Venligst tjek i Mailchimp for at sikre at alt er OK.
+        unschedule_success: Kampagnen blev successfuldt afskeduleret.
+        unschedule_failure: Kampagnene kunne ikke afskeduleres. Venligst tjek i Mailchimp for at sikre at alt er OK.
+      form:
+        to_and_from: Til og Fra
+        settings: Settings
+        subject_help: Overskrift linjen der vil blive brugt for kampagnens emails.
+        mailchimp_list_id: Mailing List
+        mailchimp_list_id_help: Mailing listen kampagnen sendes til. Disse styres i Mailchimp.
+        mailchimp_template_id: Template
+        mailchimp_template_id_help: HTML templaten der benyttes for denne kampagne. Disse styres i Mailchimp.
+        to_name: Til Navn
+        to_name_help: "Til: navn som modtagere vil se (ikke en email addresse). Du kan ændre denne default i Settings."
+        from_name: Fra Navn
+        from_name_help: "Fra: navn for din kampagne besked (ikke en email addresse). Du kan ændre denne default i Settings."
+        from_email: Fra Email
+        from_email_help: "Fra: email addressen for din kampagne besked. You can change the default in Settings."
+        auto_tweet: Auto Tweet
+        auto_tweet_help: Automatisk tweet om din kampagne når den bliver udsendt. Kræver opsætning af Twitter i Mailchimp.
+  campaigns:
+    show:
+      other: Andre Kampagner
+
